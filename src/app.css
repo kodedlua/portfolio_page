@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* Regular */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Regular Oblique */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-RegularOblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: oblique;
+}
+
+/* Regular Slanted */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-RegularSlanted.otf') format('opentype');
+  font-weight: 400;
+  font-style: oblique;
+}
+
+/* Ultrabold */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-Ultrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Ultrabold Oblique */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-UltraboldOblique.otf') format('opentype');
+  font-weight: 800;
+  font-style: oblique;
+}
+
+/* Ultrabold Slanted */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-UltraboldSlanted.otf') format('opentype');
+  font-weight: 800;
+  font-style: oblique;
+}
+
+/* Ultralight */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-Ultralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Ultralight Oblique */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-UltralightOblique.otf') format('opentype');
+  font-weight: 200;
+  font-style: oblique;
+}
+
+/* Ultralight Slanted */
+@font-face {
+  font-family: 'Telegraf';
+  src: url('assets/PPTelegraf-UltralightSlanted.otf') format('opentype');
+  font-weight: 200;
+  font-style: oblique;
+}
+
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: 'Telegraf';
+  }
