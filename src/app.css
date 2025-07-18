@@ -1,81 +1,66 @@
 @import "tailwindcss";
 
-/* Regular */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
+.bg-basic {
+  background-color: #111111;
 }
 
-/* Regular Oblique */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-RegularOblique.otf') format('opentype');
-  font-weight: 400;
-  font-style: oblique;
+p {
+  transform: translateY(-2px);
 }
 
-/* Regular Slanted */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-RegularSlanted.otf') format('opentype');
-  font-weight: 400;
-  font-style: oblique;
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
-/* Ultrabold */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-Ultrabold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* Ultrabold Oblique */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-UltraboldOblique.otf') format('opentype');
-  font-weight: 800;
-  font-style: oblique;
-}
-
-/* Ultrabold Slanted */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-UltraboldSlanted.otf') format('opentype');
-  font-weight: 800;
-  font-style: oblique;
-}
-
-/* Ultralight */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-Ultralight.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-/* Ultralight Oblique */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-UltralightOblique.otf') format('opentype');
-  font-weight: 200;
-  font-style: oblique;
-}
-
-/* Ultralight Slanted */
-@font-face {
-  font-family: 'Telegraf';
-  src: url('assets/PPTelegraf-UltralightSlanted.otf') format('opentype');
-  font-weight: 200;
-  font-style: oblique;
-}
-
 
 body {
     margin: 0;
-    background: black;
+    background: #111111;
     color: white;
-    font-family: 'Telegraf';
+    font-family: 'Darker Grotesque';
+    line-height: 1.2;
+    font-style: normal;
+    font-optical-sizing: auto;
   }
+  
+@keyframes float {
+     0%, 100% {
+         transform: translate(0, 0) rotate(0deg);
+    }
+     25% {
+         transform: translate(10px, -10px) rotate(45deg);
+    }
+     50% {
+         transform: translate(-5px, 5px) rotate(90deg);
+    }
+     75% {
+         transform: translate(-10px, -5px) rotate(135deg);
+    }
+}
+ .floating-blob {
+     animation: float 20s ease-in-out infinite;
+}
+ .main-blob {
+     background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.8) 0%, rgba(30, 144, 255, 0.6) 25%, rgba(30, 144, 255, 0.4) 50%, rgba(30, 144, 255, 0.2) 75%, transparent 100%);
+     filter: blur(80px);
+}
+ .blob-2 {
+     background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.6) 0%, rgba(30, 144, 255, 0.4) 30%, rgba(30, 144, 255, 0.2) 60%, transparent 100%);
+     filter: blur(70px);
+     animation-delay: -8s;
+}
+ .blob-3 {
+     background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.7) 0%, rgba(30, 144, 255, 0.5) 25%, rgba(30, 144, 255, 0.3) 50%, transparent 100%);
+     filter: blur(90px);
+     animation-delay: -15s;
+}
+ .blob-4 {
+     background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.5) 0%, rgba(30, 144, 255, 0.3) 40%, rgba(30, 144, 255, 0.1) 70%, transparent 100%);
+     filter: blur(60px);
+     animation-delay: -5s;
+}
+ .blob-5 {
+     background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.4) 0%, rgba(30, 144, 255, 0.2) 50%, transparent 100%);
+     filter: blur(100px);
+     animation-delay: -12s;
+}
