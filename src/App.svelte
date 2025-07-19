@@ -183,48 +183,48 @@
                 <button class="px-5 py-2 rounded-2xl bg-[#333333] text-white font-semibold border border-[#333333] cursor-default">1</button>
                 <button class="px-5 py-2 rounded-2xl bg-[#333333] text-white cursor-not-allowed opacity-50 border border-[#333333]" disabled>Następna</button>
             </div>
-            <!--TODO: blog part should be here, but i'm too lazy to do it now :( -->
-            <div class="center mx-auto w-full max-w-6xl h-auto text-center leading-normal overflow-hidden mt-80" id="contact">
-                <div class="mb-0 mt-0 pt-0 mx-auto w-max px-8 py-2 text-xl text-white z-10 relative flex items-center gap-3 justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
-                    <p class="m-0">Kontakt</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
-                </div>
-                <h1 class="text-8xl mt-0 pt-0 font-medium bg-gradient-to-b from-white via-gray-200 to-gray-400 bg-clip-text text-transparent leading-tight">Masz pytanie, pomysł lub ofertę pracy? Napisz do mnie!</h1>
-                <p class="text-4xl text-[#adadad] mb-12">Tutaj możesz mnie znaleść.</p>
-                <!-- svelte-ignore a11y_no_static_element_interactions -->
-                <div class="flex justify-center gap-6 max-w-4xl mx-auto p-6 bg-basic rounded-2xl shadow-lg">
-                    <!-- svelte-ignore a11y_click_events_have_key_events -->
-                    <div class="relative">
-                        <div class="flex flex-col items-center bg-[#111] border-[#333333] border rounded-2xl p-6 w-48 text-center cursor-pointer hover:bg-[#222] transition-colors duration-300" on:click={copyDiscord}>
-                            <div class="bg-[#1e1d1d] rounded-full p-4 mb-4">
-                                <i class="fa-brands fa-discord text-white text-2xl"></i>
-                            </div>
-                        </div>
-                        {#if copiedDiscord}
-                            <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-[9999]">
-                                <div class="relative bg-[#1E90FF] text-white text-sm px-3 py-1 rounded shadow-lg">
-                                    Skopiowano do zasobnika!
-                                    <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-[#1E90FF] rotate-45"></div>
-                                </div>
-                            </div>
-                        {/if}
-                        </div>
-                    <!-- svelte-ignore a11y_consider_explicit_label -->
-                    <a href="mailto:kubawojt90@gmail.com"><div class="flex flex-col items-center bg-[#111] border-[#333333] border rounded-2xl p-6 w-60 text-center cursor-pointer hover:bg-[#222] transition-colors duration-300">
-                        <div class="bg-[#1e1d1d] rounded-full p-4 mb-4">
-                            <i class="fa-solid fa-envelope text-white text-2xl"></i>
-                        </div>
-                    </div></a>
-                    <!-- svelte-ignore a11y_consider_explicit_label -->
-                    <a href="https://github.com/kodedlua"><div class="flex flex-col items-center bg-[#111] border-[#333333] border rounded-2xl p-6 w-48 text-center cursor-pointer  hover:bg-[#222] transition-colors duration-300">
-                        <div class="bg-[#1e1d1d] rounded-full p-4 mb-4">
-                            <i class="fa-brands fa-github text-white text-2xl"></i>
-                        </div>
-                    </div></a>
-                </div>
-                <div class="mt-100"></div>
-            </div>
         </div>
     </div>
+    <!--TODO: blog part should be here, but i'm too lazy to do it now :( -->
+    <div class="center mx-auto w-full max-w-6xl h-auto text-center leading-normal overflow-hidden mt-80" id="contact">
+        <div class="mb-0 mt-0 pt-0 mx-auto w-max px-8 py-2 text-xl text-white z-10 relative flex items-center gap-3 justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+            <p class="m-0">Kontakt</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+        </div>
+        <h1 class="text-8xl mt-0 pt-0 font-medium bg-gradient-to-b from-white via-gray-200 to-gray-400 bg-clip-text text-transparent leading-tight">Masz pytanie, pomysł lub ofertę pracy? Napisz do mnie!</h1>
+        <p class="text-4xl text-[#adadad] mb-12">Tutaj możesz mnie znaleść.</p>
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <div class="flex justify-center gap-6 max-w-4xl mx-auto p-6 bg-basic rounded-2xl shadow-lg">
+            <!-- svelte-ignore a11y_click_events_have_key_events -->
+            <div class="relative">
+                <div class="flex flex-col items-center bg-[#111] border-[#333333] border rounded-2xl p-6 w-48 text-center cursor-pointer hover:bg-[#222] transition-colors duration-300" on:click={copyDiscord}>
+                    <div class="bg-[#1e1d1d] rounded-full p-4 mb-4">
+                        <i class="fa-brands fa-discord text-white text-2xl"></i>
+                    </div>
+                </div>
+                {#if copiedDiscord}
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-[9999]">
+                        <div class="relative bg-[#1E90FF] text-white text-sm px-3 py-1 rounded shadow-lg">
+                            Skopiowano do zasobnika!
+                            <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-[#1E90FF] rotate-45"></div>
+                        </div>
+                    </div>
+                {/if}
+                </div>
+            <!-- svelte-ignore a11y_consider_explicit_label -->
+            <a href="mailto:kubawojt90@gmail.com"><div class="flex flex-col items-center bg-[#111] border-[#333333] border rounded-2xl p-6 w-60 text-center cursor-pointer hover:bg-[#222] transition-colors duration-300">
+                <div class="bg-[#1e1d1d] rounded-full p-4 mb-4">
+                    <i class="fa-solid fa-envelope text-white text-2xl"></i>
+                </div>
+            </div></a>
+            <!-- svelte-ignore a11y_consider_explicit_label -->
+            <a href="https://github.com/kodedlua"><div class="flex flex-col items-center bg-[#111] border-[#333333] border rounded-2xl p-6 w-48 text-center cursor-pointer  hover:bg-[#222] transition-colors duration-300">
+                <div class="bg-[#1e1d1d] rounded-full p-4 mb-4">
+                    <i class="fa-brands fa-github text-white text-2xl"></i>
+                </div>
+            </div></a>
+        </div>
+    </div>
+    <div class="mt-100"></div>
 </main>
