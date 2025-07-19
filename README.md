@@ -1,7 +1,8 @@
 # Portfolio Website
 
 This is a simple portfolio website project created by Jakub Wojtczak.  
-It showcases my work and skills in a clean and fairly minimal design. It was somewhat vagly inspired by [https://webflow.com/templates/html/bemine-website-template](bemine) website template
+It showcases my work and skills in a clean and fairly minimal design. 
+_It was somewhat vagly inspired by [bemine](https://webflow.com/templates/html/bemine-website-template) website template_
 
 ## Features
 
