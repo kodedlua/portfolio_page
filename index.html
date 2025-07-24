@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
@@ -9,6 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
     <title>koded.pl - Jakub Wojtczak</title>
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        const lang = path.split("/")[1];
+        const supportedLangs = ["pl", "en"];
+        const chosenLang = supportedLangs.includes(lang) ? lang : "pl";
+
+        // Ustaw atrybut lang w <html>
+        document.documentElement.lang = chosenLang;
+
+        // Zapisz język w localStorage
+        window.localStorage.setItem("lang", chosenLang);
+      })();
+    </script>
   </head>
   <body>
     <div id="app" class="overflow-x-hidden relative"></div>

@@ -10,18 +10,24 @@
         return locFromPath === "pl" || locFromPath === "en" ? locFromPath : "pl";
     }
 
+    /**
+   * @param {string} newLocal
+   */
     function changeLocalization(newLocal) {
         currentLoc.set(newLocal);
         window.history.pushState({}, "", `/${newLocal}/`);
     }
 
+    /**
+   * @param {string} __t
+   */
     function t(__t) {
-        const str = __t.split('.').reduce((o, k) => (o || {})[k], localization[local]);
+        const str = __t.split('.').reduce((/** @type {any} */ o, /** @type {string | number} */ k) => (o || {})[k], localization[local]);
         if (!str) {
             console.log(`Failed to get translation for ${local}:${__t}`)
             return `<p class="!text-red-500">[${local}:${__t}]</p>`
         }
-        return str.replace(/@([^@]+)@/g, (_, htmlPart) => htmlPart);
+        return str.replace(/@([^@]+)@/g, (/** @type {any} */ _, /** @type {any} */ htmlPart) => htmlPart);
     }
 
     function toggleLanguageButton() {
@@ -45,6 +51,9 @@
 
     let copiedDiscord = false;
 
+    /**
+   * @param {{ preventDefault: () => void; }} event
+   */
     function copyDiscord(event) {
         event.preventDefault();
         navigator.clipboard.writeText("koded070")
@@ -165,7 +174,7 @@
             <h1 class="text-8xl mt-0 pt-0 font-medium bg-gradient-to-b from-white via-gray-200 to-gray-400 bg-clip-text text-transparent leading-tight">{@html t("projects.subtitle")}</h1>
             <p class="text-4xl text-[#adadad] mb-12">{@html t("projects.description")}</p>
             <div class="flex flex-col items-center space-y-10">
-                <div class="bg-basic border-[#333333] border rounded-2xl shadow-lg p-8 flex max-w-full w-[90%] max-w-[1100px]">
+                <div class="bg-basic border-[#333333] border rounded-2xl shadow-lg p-8 flex max-w-full w-[90%]">
                     <!-- svelte-ignore a11y_img_redundant_alt -->
                     <img src="/assets/screen1.png" alt="Project image" class="w-[200px] h-[150px] object-cover rounded-md flex-shrink-0" />
                     <div class="flex flex-col justify-between flex-grow ml-10">

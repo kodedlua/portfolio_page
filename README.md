@@ -1,5 +1,7 @@
 # Portfolio Website
 
+![Screenshot](https://koded.pl/assets/screen1.png)
+
 This is a simple portfolio website project created by Jakub Wojtczak.  
 It showcases my work and skills in a clean and fairly minimal design. 
 _It was somewhat vagly inspired by [bemine](https://webflow.com/templates/html/bemine-website-template) website template_
@@ -10,6 +12,7 @@ _It was somewhat vagly inspired by [bemine](https://webflow.com/templates/html/b
 - Fairly easy to customize
 - Subject to improvment :)
 - Built with Svelte and JavaScript
+- Language localization
 
 ## License
 
