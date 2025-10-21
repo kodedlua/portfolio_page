@@ -56,7 +56,7 @@ export const localization = {
         },
         contact: {
             subtitle: "Masz pytanie, pomysł lub ofertę pracy? Napisz do mnie!",
-            description: "Tutaj możesz mnie znaleść.",
+            description: "Tutaj możesz mnie znaleźć.",
             discordCopySuccess: "Skopiowano do zasobnika!"
         }
     },
