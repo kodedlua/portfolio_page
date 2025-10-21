@@ -85,11 +85,11 @@
             <a href="#about" class="cursor-pointer text-[#adadad] rounded-full px-3 py-1 hover:text-[#EEEEEE] hover:bg-[#1e1d1d] leading-none">
                 <p>{@html t("general.about")}</p>
             </a>
+            <a href="#experience" class="cursor-pointer text-[#adadad] rounded-full px-3 py-1 hover:text-[#EEEEEE] hover:bg-[#1e1d1d] leading-none">
+                <p>{@html t("general.experience")}</p>
+            </a>
             <a href="#projects" class="cursor-pointer text-[#adadad] rounded-full px-3 py-1 hover:text-[#EEEEEE] hover:bg-[#1e1d1d] leading-none">
                 <p>{@html t("general.projects")}</p>
-            </a>
-            <a href="/" class="cursor-not-allowed text-[#5d5d5d] rounded-full px-3 py-1 leading-none">
-                <p>{@html t("general.blog")}</p>
             </a>
         </div>
         <!-- svelte-ignore a11y_click_events_have_key_events -->
@@ -107,7 +107,7 @@
             </div>
         </a>
     </header>
-    <div class="top-0 min-h-screen flex flex-col relative">
+    <div class="top-0 min-h-screen flex flex-col relative mb-25">
         <div class="absolute top-20 -left-40 w-[500px] h-[350px] main-blob floating-blob rounded-full"></div>
         <div class="absolute top-1/3 -right-40 w-[450px] h-[300px] blob-2 floating-blob rounded-full"></div>
         <div class="absolute bottom-30 -left-32 w-[400px] h-[280px] blob-3 floating-blob rounded-full"></div>
@@ -131,8 +131,9 @@
             <h1 class="text-8xl mt-0 pt-0 font-medium bg-gradient-to-b from-white via-gray-200 to-gray-400 bg-clip-text text-transparent leading-tight">{@html t("intro.subtitle")}</h1>
         </div>
     </div>
-    <div class="center mx-auto w-auto h-350 text-center leading-normal overflow-hidden mt-25" id="about">
-        <div class="mt-100 mb-0 pt-0 mx-auto w-max px-8 py-2 text-xl text-white z-10 relative flex items-center gap-3">
+    <div id="about" class="min-h-25"><!--brings user higher then the element itself :)--></div>
+    <div class="center mx-auto w-auto h-380 text-center leading-normal overflow-hidden">
+        <div class="mb-0 pt-0 mx-auto w-max px-8 py-2 text-xl text-white z-10 relative flex items-center gap-3">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
             </svg>
@@ -195,8 +196,106 @@
                 </div>
             </div>
         </div>
+        <div id="experience"><!--brings user higher then the element itself :)--></div>
+        <div class="grid justify-center gap-6 mx-auto p-6 bg-basic rounded-2xl shadow-lg mt-20 grid-cols-3 max-w-7xl">
+            <div class="flex flex-col bg-[#111] border-[#333333] border rounded-2xl p-6 max-w-100">
+                <p class="text-2xl font-semibold text-left text-white">{@html t("about.experience_1.title")}</p>
+                <p class="text-m text-left text-[#adadad]">{@html t("about.experience_1.time")}</p>
+                <p class="text-[#adadad] text-left mt-5">{@html t("about.experience_1.description")}</p>
+                <div class="flex justify-left gap-2 mt-auto">
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Svelte</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>NodeJS</p>
+                    </div>
+                </div>
+                <div class="flex justify-left gap-2">
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Vite</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#111] border-[#333333] border rounded-2xl p-6 min-w-100">
+                <p class="text-2xl font-semibold text-left text-white">{@html t("about.experience_2.title")}</p>
+                <p class="text-m text-left text-[#adadad]">{@html t("about.experience_2.time")}</p>
+                <p class="text-[#adadad] text-left mt-5">{@html t("about.experience_2.description")}</p>
+                <div class="flex justify-left gap-2 mt-auto">
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Java (2025)</p>
+                    </div>
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>PHP</p>
+                    </div>
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Python</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Spring Boot</p>
+                    </div>
+                </div>
+                <div class="flex justify-left gap-2">
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Flask</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#111] border-[#333333] border rounded-2xl p-6 max-w-100">
+                <p class="text-2xl font-semibold text-left text-white">{@html t("about.experience_3.title")}</p>
+                <p class="text-m text-left text-[#adadad]">{@html t("about.experience_3.time")}</p>
+                <p class="text-[#adadad] text-left mt-5">{@html t("about.experience_3.description")}</p>
+                <div class="flex justify-left gap-2 mt-auto">
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Java</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>BungeeCord</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Paper</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>MySQL</p>
+                    </div>
+                </div>
+                <div class="flex justify-left gap-2">
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Maven</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Linux</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#111] border-[#333333] border rounded-2xl p-6 max-w-100">
+                <p class="text-2xl font-semibold text-left text-white">{@html t("about.experience_4.title")}</p>
+                <p class="text-m text-left text-[#adadad]">{@html t("about.experience_4.time")}</p>
+                <p class="text-[#adadad] text-left mt-5">{@html t("about.experience_4.description")}</p>
+                <div class="flex justify-left gap-2 mt-auto">
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Lua</p>
+                    </div>
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>SQL</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Linux</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="center mx-auto w-full max-w-6xl h-auto text-center leading-normal overflow-hidden" id="projects">
+    <div id="projects" class="mb-25"><!--brings user higher then the element itself :)--></div>
+    <div class="center mx-auto w-full max-w-6xl h-auto text-center leading-normal overflow-hidden">
         <div class="mb-0 mt-0 pt-0 mx-auto w-max px-8 py-2 text-xl text-white z-10 relative flex items-center gap-3 justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -208,70 +307,65 @@
         </div>
         <h1 class="text-8xl mt-0 pt-0 font-medium bg-gradient-to-b from-white via-gray-200 to-gray-400 bg-clip-text text-transparent leading-tight">{@html t("projects.subtitle")}</h1>
         <p class="text-4xl text-[#adadad] mb-12">{@html t("projects.description")}</p>
-        <div class="flex flex-col items-center space-y-10">
-            <div class="bg-basic border-[#333333] border rounded-2xl shadow-lg p-8 flex max-w-full w-[90%]">
-                <!-- svelte-ignore a11y_img_redundant_alt -->
-                <img src="/assets/screen1.png" alt="Project image" class="w-[200px] h-[150px] object-cover rounded-md flex-shrink-0" />
-                <div class="flex flex-col justify-between flex-grow ml-10">
-                    <div>
-                        <h3 class="text-3xl font-semibold mb-3 text-left">{@html t("projects.project_1.title")}</h3>
-                        <p class="text-[#adadad] leading-relaxed max-w-xl text-left">
-                            {@html t("projects.project_1.description")}
-                        </p>
-                        <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
-                            Svelte + Tailwind CSS
-                        </div>
+        <div class="grid justify-center mx-auto p-6 bg-basic rounded-2xl shadow-lg grid-cols-2 min-w-10xl">
+            <div class="flex flex-col bg-[#111] border-[#333333] border rounded-2xl p-6 max-w-125">
+                <div class="flex items-center justify-between">
+                    <p class="text-2xl font-semibold text-left text-white">
+                        {@html t("projects.project_1.title")}
+                    </p>
+                    <div class="flex justify-center space-x-6 text-[#adadad] text-2xl self-center">
+                        <a href="https://github.com/kodedlua/portfolio_page/" aria-label="GitHub" class="hover:text-[#EEEEEE] transition-colors duration-200">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://koded.pl" aria-label="External Link" class="hover:text-[#EEEEEE] transition-colors duration-200">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="flex justify-center space-x-6 ml-10 text-[#adadad] text-3xl self-center">
-                    <a href="https://github.com/kodedlua/portfolio_page/" aria-label="GitHub" class="hover:text-[#EEEEEE] transition-colors duration-200">
-                    <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://koded.pl" aria-label="External Link" class="hover:text-[#EEEEEE] transition-colors duration-200">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="bg-basic border-[#333333] border rounded-2xl shadow-lg p-8 flex max-w-full w-[90%]">
-                <div class="w-[200px] h-[150px] bg-gray-700 rounded-md flex-shrink-0 animate-pulse"></div>
-                <div class="flex flex-col justify-between flex-grow ml-10">
-                    <div>
-                        <div class="w-48 h-10 bg-gray-700 rounded mb-3 animate-pulse"></div>
-                        <div class="space-y-2 max-w-xl">
-                            <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
-                            <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
-                            <div class="h-4 w-5/6 bg-gray-700 rounded animate-pulse"></div>
-                        </div>
-                        <div class="inline-block bg-gray-700 rounded-full mt-4 h-6 w-36 animate-pulse"></div>
+                <p class="text-[#adadad] text-left mt-5">{@html t("projects.project_1.description")}</p>
+                <div class="flex justify-left gap-2 mt-auto">
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Svelte</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Vite</p>
                     </div>
                 </div>
-                <div class="flex justify-center space-x-6 ml-10 text-[#adadad] text-3xl self-center">
-                    <div class="w-8 h-8 bg-gray-700 rounded-full animate-pulse"></div>
-                    <div class="w-8 h-8 bg-gray-700 rounded-full animate-pulse"></div>
-                </div>
-            </div>
-            <div class="bg-basic border-[#333333] border rounded-2xl shadow-lg p-8 flex max-w-full w-[90%]">
-                <div class="w-[200px] h-[150px] bg-gray-700 rounded-md flex-shrink-0 animate-pulse"></div>
-                <div class="flex flex-col justify-between flex-grow ml-10">
-                    <div>
-                        <div class="w-48 h-10 bg-gray-700 rounded mb-3 animate-pulse"></div>
-                        <div class="space-y-2 max-w-xl">
-                            <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
-                            <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
-                            <div class="h-4 w-5/6 bg-gray-700 rounded animate-pulse"></div>
-                        </div>
-                        <div class="inline-block bg-gray-700 rounded-full mt-4 h-6 w-36 animate-pulse"></div>
+                <div class="flex justify-left gap-2">
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>TailwindCSS</p>
                     </div>
                 </div>
-                <div class="flex justify-center space-x-6 ml-10 text-[#adadad] text-3xl self-center">
-                    <div class="w-8 h-8 bg-gray-700 rounded-full animate-pulse"></div>
-                    <div class="w-8 h-8 bg-gray-700 rounded-full animate-pulse"></div>
-                </div>
             </div>
-            <div class="flex justify-center space-x-4 mt-8 select-none">
-                <button class="px-5 py-2 rounded-2xl bg-[#333333] text-white cursor-not-allowed opacity-50 border border-[#333333]" disabled>{@html t("general.paginationPrev")}</button>
-                <button class="px-5 py-2 rounded-2xl bg-[#333333] text-white font-semibold border border-[#333333] cursor-default">1</button>
-                <button class="px-5 py-2 rounded-2xl bg-[#333333] text-white cursor-not-allowed opacity-50 border border-[#333333]" disabled>{@html t("general.paginationNext")}</button>
+            <div class="flex flex-col bg-[#111] border-[#333333] border rounded-2xl p-6 max-w-125">
+                <div class="flex items-center justify-between">
+                    <p class="text-2xl font-semibold text-left text-white">
+                        {@html t("projects.project_2.title")}
+                    </p>
+                    <div class="flex justify-center space-x-6 text-[#adadad] text-2xl self-center">
+                        <a href="https://github.com/kodedlua/fintrix_backend" aria-label="GitHub" class="hover:text-[#EEEEEE] transition-colors duration-200">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-[#adadad] text-left mt-5">{@html t("projects.project_2.description")}</p>
+                <div class="flex justify-left gap-2 mt-auto">
+                    <div class="inline-block bg-[#1E90FF] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Java</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Spring Boot</p>
+                    </div>
+                    <div class="inline-block bg-[#333333] text-white text-sm font-medium px-4 py-1 rounded-full mt-4">
+                        <p>Maven</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

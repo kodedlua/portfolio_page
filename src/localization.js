@@ -4,7 +4,7 @@ export const localization = {
             about: "O mnie",
             languages: "Języki",
             projects: "Projekty",
-            blog: "Blog",
+            experience: "Doświadczenie",
             contact: "Kontakt",
             paginationPrev: "Poprzednia",
             paginationNext: "Następna"
@@ -19,19 +19,39 @@ export const localization = {
         about: {
             subtitle: "Kreatywność, logika i technika",
             description: "Lepiej poznaj mnie, moją historie i moje umiejętności",
-            bio: `Jestem tegorocznym absolwentem liceum ogólnokształcącego, a moją największą pasją od wielu lat są nowe technologie oraz świat komputerów.  
-        Programowaniem zainteresowałem się już w wieku 10 lat i od tego czasu konsekwentnie rozwijam swoje umiejętności w ramach samodzielnej, autodidaktycznej nauki.  
-        Szczególnie bliskie są mi języki Java i Python.  
-        Cechuje mnie szybkie przyswajanie wiedzy, swobodne poruszanie się w środowisku komputerowym oraz umiejętność logicznego myślenia i skutecznego rozwiązywania problemów.  
-        Programowanie to dla mnie nie tylko nauka, ale przede wszystkim pasja, która motywuje mnie do ciągłego rozwoju i poszukiwania nowych wyzwań.`
+            bio: `Student pierwszego roku informatyki na Wojskowej Akademii Technicznej, pasjonat nowych technologii i programowania z doświadczeniem w Java i Python. Od lat rozwijam swoje umiejętności w tworzeniu nowoczesnych rozwiązań, kierując się ciekawością, logiką i chęcią nieustannego rozwoju.`,
+            experience_1: {
+                title: "Tworzenie stron WWW",
+                time: "od 2020 do teraz",
+                description: "Projektowanie i rozwój interfejsów użytkownika, implementacja responsywnych i nowoczesnych aplikacji webowych z naciskiem na wydajność i doświadczenie użytkownika."
+            },
+            experience_2: {
+                title: "Tworzenie infrastruktury backend",
+                time: "od 2022 do teraz",
+                description: "Projektowanie, rozwój i utrzymanie infrastruktury backendowej. W tym także tworzenie skalowalnych rozwiązań typu API."
+            },
+            experience_3: {
+                title: "Tworzenie i administracja serwerów do gry Minecraft",
+                time: "od 2018 do 2023",
+                description: "Projektowałem, konfigurowałem i utrzymywałem serwery Minecraft, tworzyłem dedykowane pluginy zwiększające funkcjonalność oraz zarządzałem techniczną stroną środowiska serwerowego."
+            },
+            experience_4: {
+                title: "Rozwój i administracja serwerów do gry GTA V",
+                time: "od 2022 do 2024",
+                description: "Tworzenie i utrzymanie serwerów FiveM Roleplay dla GTA V, w tym rozwój dedykowanych skryptów, konfiguracja systemów oraz utrzymanie środowiska serwerowego."
+            },
         },
         projects: {
             title: "Moje projekty",
             subtitle: "Kod, który robi robotę",
             description: "Koduję, testuję, czasem nawet śpię. Tu znajdziesz efekty - projekty, które nie tylko działają, ale nawet czasami mają sens.",
             project_1: {
-                title: "Dokładnie ta strona na którą patrzysz (Résumé)",
+                title: "Strona osobista",
                 description: "Strona portfolio z obsługą lokalizacji językowej zrobiona w Svelte i Tailwind CSS. Chciałem, żeby była szybka, przejrzysta i łatwa do rozwijania. Wszystko działa responsywnie, bez zbędnych bajerów - prosto i na temat.",
+            },
+            project_2: {
+                title: "Proste API dla aplikacji bankowej",
+                description: "Implementacja prostego API dla aplikacji bankowej z wykorzystaniem Spring Boot, obejmująca obsługę podstawowych operacji na kontach i transakcjach."
             }
         },
         contact: {
@@ -45,7 +65,7 @@ export const localization = {
             about: "About Me",
             languages: "Languages",
             projects: "Projects",
-            blog: "Blog",
+            experience: "Doświadczenie",
             contact: "Contact",
             paginationPrev: "Previous",
             paginationNext: "Next"
@@ -60,19 +80,39 @@ export const localization = {
         about: {
             subtitle: "Creativity, logic, and technology",
             description: "Get to know me better, my story, and my skills",
-            bio: `I'm polish high school graduate this year, and for many years my biggest passion has been new technologies and the world of computers.  
-            I became interested in programming at the age of 10 and since then have been consistently developing my skills through self-taught learning.  
-            Java and Python are especially close to my heart.  
-            I am characterized by quick learning, ease of navigating computer environments, logical thinking, and effective problem-solving.  
-            For me, programming is not only learning but above all a passion that motivates me to constantly grow and seek new challenges.`
+            bio: `First-year CompSci student at the Military University of Technology in Poland, passionate about software development and emerging technologies. Experienced in Java and Python, I'm continuously expanding my skills to build modern, efficient, and scalable solutions.`,
+            experience_1: {
+                title: "Web Development",
+                time: "from 2020 to present",
+                description: "Design and development of user interfaces, implementation of responsive and modern web applications with a focus on performance and user experience."
+            },
+            experience_2: {
+                title: "Backend Infrastructure Development",
+                time: "from 2022 to present",
+                description: "Design, development, and maintenance of backend infrastructure, including the creation of scalable API solutions."
+            },
+            experience_3: {
+                title: "Minecraft Server Development and Administration",
+                time: "from 2018 to 2023",
+                description: "Designed, configured, and maintained Minecraft servers, developed custom plugins to enhance functionality, and managed the technical aspects of the server environment."
+            },
+            experience_4: {
+                title: "GTA V Server Development and Administration",
+                time: "from 2022 to 2024",
+                description: "Developed and maintained FiveM Roleplay servers for GTA V, including the creation of dedicated scripts, system configuration, and maintenance of the server environment."
+            }
         },
         projects: {
             title: "My Projects",
             subtitle: "Code that gets the job done",
             description: "I code, test, and sometimes even sleep. Here you'll find the results — projects that not only work but sometimes even make sense.",
             project_1: {
-                title: "Exactly this website you're looking at (Résumé)",
-                description: "A portfolio website with language localization built with Svelte and Tailwind CSS. I wanted it to be fast, clear, and easy to maintain. Everything is responsive, with no unnecessary bells and whistles — straightforward and to the point.",
+                title: "Personal website",
+                description: "A portfolio website with language localization built with Svelte and Tailwind CSS. I wanted it to be fast, clear, and easy to maintain. Everything is responsive, with no unnecessary bells and whistles - straightforward and to the point.",
+            },
+            project_2: {
+                title: "Simple API for a banking app",
+                description: "Development of a simple API for a banking application using Spring Boot, handling basic account and transaction operations."
             }
         },
         contact: {
