@@ -65,7 +65,7 @@ export const localization = {
             about: "About Me",
             languages: "Languages",
             projects: "Projects",
-            experience: "Doświadczenie",
+            experience: "Experience",
             contact: "Contact",
             paginationPrev: "Previous",
             paginationNext: "Next"
